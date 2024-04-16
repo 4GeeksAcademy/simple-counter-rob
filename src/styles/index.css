@@ -1,0 +1,19 @@
+.bigCounter{
+    font-size: 40px;
+    font-weight: bolder;
+
+
+
+}
+.clockDigit span{
+    width: 65px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: rgb(214, 207, 207);
+}
+img{
+    float: left;
+    width: 15%;
+}
