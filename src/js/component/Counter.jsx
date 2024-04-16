@@ -35,6 +35,7 @@ export const Counter = () => {
 
     return (
         <div>
+             
         <div className="d-flex m-0 justify-content-center bigCounter py-3">
             <div className="four px-1 clockDigit text-white py-1"><span className="border border-white rounded-3">{four}</span></div>
             <div className="three px-1 clockDigit text-white py-1"><span className="border border-white rounded-3">{three}</span></div>
@@ -52,7 +53,7 @@ export const Counter = () => {
                     <button onClick={handleReset} className="btn btn-outline-warning ">Reset</button>
                 </div>
                 <p className={`text-secondary pt-3 ${isRunning ? 'opacity-0' : ''}`}>You might've stopped it, but you're still wasting time 😒</p>
-                <div><img className="pt-5" float-start src={isRunning ? asomado : asomado2} alt="Tío" /></div>
+                <div id="imagenes" ><img className="pt-5 " src={isRunning ? asomado : asomado2} alt="Tío" /></div>
 
         </div>
     );

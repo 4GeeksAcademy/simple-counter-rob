@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 
 //include images into your bundle
-import asomado from "../../img/tio.png";
-import asomado2 from "../../img/tio2.png";
+
 import { Counter } from './Counter';
 
 //create your first component
