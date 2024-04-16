@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom";
 import '../../styles/index.css';
 import PropTypes from "prop-types";
+import asomado from "../../img/tio.png";
+import asomado2 from "../../img/tio2.png";
 
 export const Counter = () => {
     const [timer, setTimer] = useState(0);
@@ -49,6 +51,9 @@ export const Counter = () => {
                     )}
                     <button onClick={handleReset} className="btn btn-outline-warning ">Reset</button>
                 </div>
+                <p className={`text-secondary pt-3 ${isRunning ? 'opacity-0' : ''}`}>You might've stopped it, but you're still wasting time 😒</p>
+                <div><img className="pt-5" float-start src={isRunning ? asomado : asomado2} alt="Tío" /></div>
+
         </div>
     );
 };
@@ -58,6 +63,7 @@ Counter.propTypes = {
     digitTwo: PropTypes.number,
     digitThree: PropTypes.number,
     digitFour: PropTypes.number,
+    
 }
 
 ReactDOM.render(<Counter />, document.querySelector('#app'));
