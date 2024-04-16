@@ -1,12 +1,26 @@
-
-/* 
-
-    You can write your own styles here...
+.bigCounter{
+    font-size: 40px;
+    font-weight: bolder;
     
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
 
-*/
+}
+
+.clockDigit{
+    width: 65px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+.clockDigit span{
+    width: 65px;
+    display: flex;
+    justify-content: center;
+}
+h1{
+    color: rgb(214, 207, 207);
+}
+img{
+    float: left;
+    width: 15%;
+}
